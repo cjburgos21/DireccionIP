@@ -43,6 +43,7 @@
 
 
     <EditText
+        android:id="@+id/direccionip"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -57,6 +58,7 @@
 
 
      <EditText
+         android:id="@+id/mascara1"
          android:layout_width="120dp"
          android:layout_height="wrap_content"
          android:layout_marginLeft="40dp"
@@ -80,8 +82,9 @@
             android:textColor="#000000"
             />
         
-        <EditText
-            android:layout_marginTop="20dp"
+        <TextView
+            android:id="@+id/netid1"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="45dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content" />
@@ -105,8 +108,9 @@
             android:layout_marginTop="10dp"
             />
 
-        <EditText
-            android:layout_marginTop="20dp"
+        <TextView
+            android:id="@+id/broad1"
+            android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
@@ -151,15 +155,17 @@
         >
         
         
-        <EditText
-            android:layout_marginTop="10dp"
+        <TextView
+            android:id="@+id/host1"
+            android:layout_marginTop="5dp"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             />
 
-        <EditText
-            android:layout_marginTop="10dp"
+        <TextView
+            android:id="@+id/red1"
+            android:layout_marginTop="5dp"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -183,7 +189,8 @@
             android:textColor="#000000"
             />
 
-        <EditText
+        <TextView
+            android:id="@+id/host2"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -191,6 +198,37 @@
 
         
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parte mascara"
+            android:textColor="#000000"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/masc2"
+            android:layout_width="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="calcula"
+        android:onClick="calcular"
+        />
 
 
 
